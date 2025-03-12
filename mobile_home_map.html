@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cca5aa79f6796a903e4f421b9d93202d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cca5aa79f6796a903e4f421b9d93202d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cca5aa79f6796a903e4f421b9d93202d = L.map(
+                "map_cca5aa79f6796a903e4f421b9d93202d",
+                {
+                    center: [26.570462267112376, -80.15203180290717],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b18e19724c04d5b964fe19bb8708d9e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4b18e19724c04d5b964fe19bb8708d9e.addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var marker_139f34724fe61ef48cf7ec74c6dd5262 = L.marker(
+                [26.72165457142857, -80.10515671428571],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_8e50df99b1f1cd528d43ed8faf334067 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44bb060a0eb09af3843d521281bfb447 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc2e3ff42270b1467ef44ae3a69a161e = $(`<div id="html_cc2e3ff42270b1467ef44ae3a69a161e" style="width: 100.0%; height: 100.0%;">GARDEN LAKE</div>`)[0];
+                popup_44bb060a0eb09af3843d521281bfb447.setContent(html_cc2e3ff42270b1467ef44ae3a69a161e);
+            
+        
+
+        marker_139f34724fe61ef48cf7ec74c6dd5262.bindPopup(popup_44bb060a0eb09af3843d521281bfb447)
+        ;
+
+        
+    
+    
+            marker_139f34724fe61ef48cf7ec74c6dd5262.bindTooltip(
+                `<div>
+                     GARDEN LAKE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_139f34724fe61ef48cf7ec74c6dd5262.setIcon(icon_8e50df99b1f1cd528d43ed8faf334067);
+            
+    
+            var marker_4832fc3a921d2c7960b1b73a81ead9d3 = L.marker(
+                [26.721961, -80.107031],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_3e8e4e87c756a46b6191ccd4e2f987ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_350c3c7ccc8bd8d2fa31d3b563afd46c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea160e61464504b6bb9ddeb50319b96d = $(`<div id="html_ea160e61464504b6bb9ddeb50319b96d" style="width: 100.0%; height: 100.0%;">GARDEN LAKE IN</div>`)[0];
+                popup_350c3c7ccc8bd8d2fa31d3b563afd46c.setContent(html_ea160e61464504b6bb9ddeb50319b96d);
+            
+        
+
+        marker_4832fc3a921d2c7960b1b73a81ead9d3.bindPopup(popup_350c3c7ccc8bd8d2fa31d3b563afd46c)
+        ;
+
+        
+    
+    
+            marker_4832fc3a921d2c7960b1b73a81ead9d3.bindTooltip(
+                `<div>
+                     GARDEN LAKE IN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4832fc3a921d2c7960b1b73a81ead9d3.setIcon(icon_3e8e4e87c756a46b6191ccd4e2f987ba);
+            
+    
+            var marker_7c8850ee39d348419ec89bd0af9bc37f = L.marker(
+                [26.809552, -80.08073200000001],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_3e8dd2330c3a258ee0f91957660f866b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf048f5f481c5834f14efc7ffb33bbbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_139e594ceba99c223277e95866e0e71c = $(`<div id="html_139e594ceba99c223277e95866e0e71c" style="width: 100.0%; height: 100.0%;">HILLTOP PARK</div>`)[0];
+                popup_bf048f5f481c5834f14efc7ffb33bbbb.setContent(html_139e594ceba99c223277e95866e0e71c);
+            
+        
+
+        marker_7c8850ee39d348419ec89bd0af9bc37f.bindPopup(popup_bf048f5f481c5834f14efc7ffb33bbbb)
+        ;
+
+        
+    
+    
+            marker_7c8850ee39d348419ec89bd0af9bc37f.bindTooltip(
+                `<div>
+                     HILLTOP PARK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c8850ee39d348419ec89bd0af9bc37f.setIcon(icon_3e8dd2330c3a258ee0f91957660f866b);
+            
+    
+            var marker_68d1cbfe3a6bc9d4de36299767dc01c1 = L.marker(
+                [26.8108975, -80.08123950000001],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_2f8f43ba2f57109f6ecc08eafc4a7c0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95b71cd2fcb56a572e42a3c2867e19b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cba6c1294c7113072365c3c1b47405bb = $(`<div id="html_cba6c1294c7113072365c3c1b47405bb" style="width: 100.0%; height: 100.0%;">Hilltop Park</div>`)[0];
+                popup_95b71cd2fcb56a572e42a3c2867e19b2.setContent(html_cba6c1294c7113072365c3c1b47405bb);
+            
+        
+
+        marker_68d1cbfe3a6bc9d4de36299767dc01c1.bindPopup(popup_95b71cd2fcb56a572e42a3c2867e19b2)
+        ;
+
+        
+    
+    
+            marker_68d1cbfe3a6bc9d4de36299767dc01c1.bindTooltip(
+                `<div>
+                     Hilltop Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_68d1cbfe3a6bc9d4de36299767dc01c1.setIcon(icon_2f8f43ba2f57109f6ecc08eafc4a7c0e);
+            
+    
+            var marker_fb5e6d9c55ad6597860a5e0a7ee55923 = L.marker(
+                [26.701083500000003, -80.1229575],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_2d7d95354aade012e077bdc12741abc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4716f7083244f8fa05b10d405337f99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f01699382d61df464ca83a8da4654e62 = $(`<div id="html_f01699382d61df464ca83a8da4654e62" style="width: 100.0%; height: 100.0%;">MOBILAIRE</div>`)[0];
+                popup_e4716f7083244f8fa05b10d405337f99.setContent(html_f01699382d61df464ca83a8da4654e62);
+            
+        
+
+        marker_fb5e6d9c55ad6597860a5e0a7ee55923.bindPopup(popup_e4716f7083244f8fa05b10d405337f99)
+        ;
+
+        
+    
+    
+            marker_fb5e6d9c55ad6597860a5e0a7ee55923.bindTooltip(
+                `<div>
+                     MOBILAIRE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb5e6d9c55ad6597860a5e0a7ee55923.setIcon(icon_2d7d95354aade012e077bdc12741abc3);
+            
+    
+            var marker_74455660ece7c4fd009b57814cd85564 = L.marker(
+                [26.700439, -80.1266565],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_f197260f99b16bfd59e99086be382d0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_436fac5934b9c3ca8d80008783920274 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03f757af70b3845e8fda7004ac9432fe = $(`<div id="html_03f757af70b3845e8fda7004ac9432fe" style="width: 100.0%; height: 100.0%;">MOBILAIRE 1ST ADD</div>`)[0];
+                popup_436fac5934b9c3ca8d80008783920274.setContent(html_03f757af70b3845e8fda7004ac9432fe);
+            
+        
+
+        marker_74455660ece7c4fd009b57814cd85564.bindPopup(popup_436fac5934b9c3ca8d80008783920274)
+        ;
+
+        
+    
+    
+            marker_74455660ece7c4fd009b57814cd85564.bindTooltip(
+                `<div>
+                     MOBILAIRE 1ST ADD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74455660ece7c4fd009b57814cd85564.setIcon(icon_f197260f99b16bfd59e99086be382d0f);
+            
+    
+            var marker_5247cbd43c7299d5f7fdef7679ae67fb = L.marker(
+                [26.700471, -80.125071],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_79c6edc37adb2a661fa214db0746ffca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_405890a1c80e52c623d2e926e7df81b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20512b93eb727cfef32e18fef5687cbe = $(`<div id="html_20512b93eb727cfef32e18fef5687cbe" style="width: 100.0%; height: 100.0%;">MOBILAIRE 1ST ADD IN</div>`)[0];
+                popup_405890a1c80e52c623d2e926e7df81b0.setContent(html_20512b93eb727cfef32e18fef5687cbe);
+            
+        
+
+        marker_5247cbd43c7299d5f7fdef7679ae67fb.bindPopup(popup_405890a1c80e52c623d2e926e7df81b0)
+        ;
+
+        
+    
+    
+            marker_5247cbd43c7299d5f7fdef7679ae67fb.bindTooltip(
+                `<div>
+                     MOBILAIRE 1ST ADD IN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5247cbd43c7299d5f7fdef7679ae67fb.setIcon(icon_79c6edc37adb2a661fa214db0746ffca);
+            
+    
+            var marker_3a8756681c99925d44dfb5cc9858a044 = L.marker(
+                [26.700765, -80.120236],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_12bede8c074f4d0e0278fa8399c46b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00e5124b6c8e58f4f879a436b4a40479 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e067975918ac623d0a37dd08fe7fdb4 = $(`<div id="html_6e067975918ac623d0a37dd08fe7fdb4" style="width: 100.0%; height: 100.0%;">MOBILAIRE IN</div>`)[0];
+                popup_00e5124b6c8e58f4f879a436b4a40479.setContent(html_6e067975918ac623d0a37dd08fe7fdb4);
+            
+        
+
+        marker_3a8756681c99925d44dfb5cc9858a044.bindPopup(popup_00e5124b6c8e58f4f879a436b4a40479)
+        ;
+
+        
+    
+    
+            marker_3a8756681c99925d44dfb5cc9858a044.bindTooltip(
+                `<div>
+                     MOBILAIRE IN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a8756681c99925d44dfb5cc9858a044.setIcon(icon_12bede8c074f4d0e0278fa8399c46b29);
+            
+    
+            var marker_0509a8df7bb1e1e9ae563da733091079 = L.marker(
+                [26.70053, -80.134868],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_ecc733f2f20038ced6c678acb8606edf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d29ae07325a0f522bdb257344eb841d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c884671f4ae6223e5a9bf7bf78cc982 = $(`<div id="html_3c884671f4ae6223e5a9bf7bf78cc982" style="width: 100.0%; height: 100.0%;">PLANTATION MANOR ESTATES 1</div>`)[0];
+                popup_d29ae07325a0f522bdb257344eb841d4.setContent(html_3c884671f4ae6223e5a9bf7bf78cc982);
+            
+        
+
+        marker_0509a8df7bb1e1e9ae563da733091079.bindPopup(popup_d29ae07325a0f522bdb257344eb841d4)
+        ;
+
+        
+    
+    
+            marker_0509a8df7bb1e1e9ae563da733091079.bindTooltip(
+                `<div>
+                     PLANTATION MANOR ESTATES 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0509a8df7bb1e1e9ae563da733091079.setIcon(icon_ecc733f2f20038ced6c678acb8606edf);
+            
+    
+            var marker_6634df14d65615f0d9eb6708aa6dd2ec = L.marker(
+                [26.706004, -80.132241],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_6ba975da8a8e49da0008a4b9ce6f403a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_539d311716a0a6b5d78459019420a1c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ae634b6491b5189d465fa81e9e1299e = $(`<div id="html_3ae634b6491b5189d465fa81e9e1299e" style="width: 100.0%; height: 100.0%;">PLANTATION MANOR ESTATES 2</div>`)[0];
+                popup_539d311716a0a6b5d78459019420a1c8.setContent(html_3ae634b6491b5189d465fa81e9e1299e);
+            
+        
+
+        marker_6634df14d65615f0d9eb6708aa6dd2ec.bindPopup(popup_539d311716a0a6b5d78459019420a1c8)
+        ;
+
+        
+    
+    
+            marker_6634df14d65615f0d9eb6708aa6dd2ec.bindTooltip(
+                `<div>
+                     PLANTATION MANOR ESTATES 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6634df14d65615f0d9eb6708aa6dd2ec.setIcon(icon_6ba975da8a8e49da0008a4b9ce6f403a);
+            
+    
+            var marker_1d92320b50d73c2d55ee8e744bae7186 = L.marker(
+                [26.652794, -80.114367],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_434d8ff1249d6fc5610fd1d99178b819 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30ddd3a445b361c7d5eac33837c6be1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d40922911cc3f8f8f5917c3a0e242288 = $(`<div id="html_d40922911cc3f8f8f5917c3a0e242288" style="width: 100.0%; height: 100.0%;">SUNSET RANCH UNIT 1</div>`)[0];
+                popup_30ddd3a445b361c7d5eac33837c6be1e.setContent(html_d40922911cc3f8f8f5917c3a0e242288);
+            
+        
+
+        marker_1d92320b50d73c2d55ee8e744bae7186.bindPopup(popup_30ddd3a445b361c7d5eac33837c6be1e)
+        ;
+
+        
+    
+    
+            marker_1d92320b50d73c2d55ee8e744bae7186.bindTooltip(
+                `<div>
+                     SUNSET RANCH UNIT 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d92320b50d73c2d55ee8e744bae7186.setIcon(icon_434d8ff1249d6fc5610fd1d99178b819);
+            
+    
+            var marker_de46815635cd7b817ff269c42d842fd5 = L.marker(
+                [26.33474647826087, -80.21080391304348],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_718a5b2dbc0c56bf773143a604848df1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_287d52a802df68fbf65c743e7c445e7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f73f6722552a6cdadd878d859308b034 = $(`<div id="html_f73f6722552a6cdadd878d859308b034" style="width: 100.0%; height: 100.0%;">WATERGATE MOBILE HOME</div>`)[0];
+                popup_287d52a802df68fbf65c743e7c445e7b.setContent(html_f73f6722552a6cdadd878d859308b034);
+            
+        
+
+        marker_de46815635cd7b817ff269c42d842fd5.bindPopup(popup_287d52a802df68fbf65c743e7c445e7b)
+        ;
+
+        
+    
+    
+            marker_de46815635cd7b817ff269c42d842fd5.bindTooltip(
+                `<div>
+                     WATERGATE MOBILE HOME
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de46815635cd7b817ff269c42d842fd5.setIcon(icon_718a5b2dbc0c56bf773143a604848df1);
+            
+    
+            var marker_9217fd32f83e9f742faa371f883a3131 = L.marker(
+                [26.332877125, -80.217043],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_fba04cec0387d1b151939492d03ffd30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_823d92160c9b6ceb3bb19e0ebc3bcdea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bc20ff9e9f015261517f27d433b65d3 = $(`<div id="html_5bc20ff9e9f015261517f27d433b65d3" style="width: 100.0%; height: 100.0%;">WATERGATE MOBILE HOME ESTATES</div>`)[0];
+                popup_823d92160c9b6ceb3bb19e0ebc3bcdea.setContent(html_5bc20ff9e9f015261517f27d433b65d3);
+            
+        
+
+        marker_9217fd32f83e9f742faa371f883a3131.bindPopup(popup_823d92160c9b6ceb3bb19e0ebc3bcdea)
+        ;
+
+        
+    
+    
+            marker_9217fd32f83e9f742faa371f883a3131.bindTooltip(
+                `<div>
+                     WATERGATE MOBILE HOME ESTATES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9217fd32f83e9f742faa371f883a3131.setIcon(icon_fba04cec0387d1b151939492d03ffd30);
+            
+    
+            var marker_b3d0c5b0e16a37322ef96122f41a0e74 = L.marker(
+                [26.336801, -80.20505],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_a56b54ee466843289ed948294631ac9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_736e23eee9044924135ac1f03aaa3a97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e0ea25b16d55236094e5049f2510505 = $(`<div id="html_6e0ea25b16d55236094e5049f2510505" style="width: 100.0%; height: 100.0%;">WATERGATE MOBILE HOME UNR</div>`)[0];
+                popup_736e23eee9044924135ac1f03aaa3a97.setContent(html_6e0ea25b16d55236094e5049f2510505);
+            
+        
+
+        marker_b3d0c5b0e16a37322ef96122f41a0e74.bindPopup(popup_736e23eee9044924135ac1f03aaa3a97)
+        ;
+
+        
+    
+    
+            marker_b3d0c5b0e16a37322ef96122f41a0e74.bindTooltip(
+                `<div>
+                     WATERGATE MOBILE HOME UNR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3d0c5b0e16a37322ef96122f41a0e74.setIcon(icon_a56b54ee466843289ed948294631ac9f);
+            
+    
+            var marker_6b458763f4889cd3f26b10734cbebbf5 = L.marker(
+                [26.33464, -80.209499],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_c6638ea9f25368c7a7a07323d8a04466 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c643ca09c68cd772d2b1625083323537 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b49cd08710648e28e9db69964f264019 = $(`<div id="html_b49cd08710648e28e9db69964f264019" style="width: 100.0%; height: 100.0%;">Watergate Mobile Home</div>`)[0];
+                popup_c643ca09c68cd772d2b1625083323537.setContent(html_b49cd08710648e28e9db69964f264019);
+            
+        
+
+        marker_6b458763f4889cd3f26b10734cbebbf5.bindPopup(popup_c643ca09c68cd772d2b1625083323537)
+        ;
+
+        
+    
+    
+            marker_6b458763f4889cd3f26b10734cbebbf5.bindTooltip(
+                `<div>
+                     Watergate Mobile Home
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b458763f4889cd3f26b10734cbebbf5.setIcon(icon_c6638ea9f25368c7a7a07323d8a04466);
+            
+    
+            var marker_bcf54f169c57a25da60924be325efaa4 = L.marker(
+                [26.334856133333336, -80.2163972],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_237f52305075076ba3b8a213367c5f98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9e3a04e7d0ed9cb8195ecf55946e338 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27138d6ee323ba31dcaa7fbaaac5ae4b = $(`<div id="html_27138d6ee323ba31dcaa7fbaaac5ae4b" style="width: 100.0%; height: 100.0%;">Watergate Mobile Home Est</div>`)[0];
+                popup_b9e3a04e7d0ed9cb8195ecf55946e338.setContent(html_27138d6ee323ba31dcaa7fbaaac5ae4b);
+            
+        
+
+        marker_bcf54f169c57a25da60924be325efaa4.bindPopup(popup_b9e3a04e7d0ed9cb8195ecf55946e338)
+        ;
+
+        
+    
+    
+            marker_bcf54f169c57a25da60924be325efaa4.bindTooltip(
+                `<div>
+                     Watergate Mobile Home Est
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcf54f169c57a25da60924be325efaa4.setIcon(icon_237f52305075076ba3b8a213367c5f98);
+            
+    
+            var marker_3ab46d14d7c6c4abff6e55ac1ee0a2d2 = L.marker(
+                [26.334529, -80.215636],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_2b591ec9c3b33d9efada115f03f88275 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19ad18f16e86e6644c09460ad0bfd812 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_461828174f26664bfca512a2fbcd02c0 = $(`<div id="html_461828174f26664bfca512a2fbcd02c0" style="width: 100.0%; height: 100.0%;">Watergate Mobile Home Esta</div>`)[0];
+                popup_19ad18f16e86e6644c09460ad0bfd812.setContent(html_461828174f26664bfca512a2fbcd02c0);
+            
+        
+
+        marker_3ab46d14d7c6c4abff6e55ac1ee0a2d2.bindPopup(popup_19ad18f16e86e6644c09460ad0bfd812)
+        ;
+
+        
+    
+    
+            marker_3ab46d14d7c6c4abff6e55ac1ee0a2d2.bindTooltip(
+                `<div>
+                     Watergate Mobile Home Esta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ab46d14d7c6c4abff6e55ac1ee0a2d2.setIcon(icon_2b591ec9c3b33d9efada115f03f88275);
+            
+    
+            var marker_622c1a66d51f9f7a587ff2c14da65155 = L.marker(
+                [26.3337195, -80.211587125],
+                {
+}
+            ).addTo(map_cca5aa79f6796a903e4f421b9d93202d);
+        
+    
+            var icon_9d4b456d76294394b9bedeb614ad4092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09fe60738e1dc2f9990abd6494877a76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec8da8c0fa40fbcc2ac1124bababd745 = $(`<div id="html_ec8da8c0fa40fbcc2ac1124bababd745" style="width: 100.0%; height: 100.0%;">Watergate Mobile Home Unr</div>`)[0];
+                popup_09fe60738e1dc2f9990abd6494877a76.setContent(html_ec8da8c0fa40fbcc2ac1124bababd745);
+            
+        
+
+        marker_622c1a66d51f9f7a587ff2c14da65155.bindPopup(popup_09fe60738e1dc2f9990abd6494877a76)
+        ;
+
+        
+    
+    
+            marker_622c1a66d51f9f7a587ff2c14da65155.bindTooltip(
+                `<div>
+                     Watergate Mobile Home Unr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_622c1a66d51f9f7a587ff2c14da65155.setIcon(icon_9d4b456d76294394b9bedeb614ad4092);
+            
+</script>
+</html>
